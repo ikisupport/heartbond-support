@@ -66,7 +66,7 @@
       "src": "hero-mac.png",
       "alt": "HeartBond on Mac, two days of Synthetic Data.",
       "caption": [
-        "HeartBond on Mac. The upper day keeps all samples and plots Watch (blue) and Ring (purple) as a point cloud. The lower day is the High–low line: the highest and lowest reading in each five-minute span.",
+        "HeartBond on Mac. The upper day keeps all samples and plots Watch (blue) and Ring (violet) as a point cloud. The lower day is the High–low line: the highest and lowest reading in each five-minute span.",
         "The Synthetic Data chip means these traces are generated for the graph. They are not a person's Health record, so this page does not publish private heart data.",
         "Private Data is the other environment. HeartBond asks before it reads Apple Health. Downloaded days sync through your own iCloud account. There is no HeartBond server holding them."
       ]
