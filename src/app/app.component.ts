@@ -23,8 +23,9 @@ import COPY from './content/copy.json';
           <a routerLink="/getting-started">{{ copy.app.footer.links.gettingStarted }}</a>
           <a routerLink="/privacy">{{ copy.app.footer.links.privacy }}</a>
           <a routerLink="/terms">{{ copy.app.footer.links.terms }}</a>
+          <a [href]="copy.links.ikiSystemsHome" target="_blank" rel="noopener noreferrer">{{ copy.app.footer.links.ikiSystems }}</a>
         </nav>
-        <p class="footer__fine">{{ copyright }}</p>
+        <p class="footer__fine" [innerHTML]="copyright"></p>
       </div>
     </footer>
   `,
@@ -77,14 +78,23 @@ import COPY from './content/copy.json';
       font-size: 0.84rem;
       opacity: 0.8;
     }
+
+    .footer__fine ::ng-deep a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer__fine ::ng-deep a:hover {
+      color: var(--accent-green-dark);
+    }
   `]
 })
 export class AppComponent {
   protected readonly copy = COPY;
-  protected readonly copyright = COPY.app.footer.copyright.replace(
-    '{{year}}',
-    String(new Date().getFullYear()),
-  );
+  protected readonly copyright = COPY.app.footer.copyrightHtml
+    .replace('{{year}}', String(new Date().getFullYear()))
+    .replace('{{ikiSystemsHome}}', COPY.links.ikiSystemsHome);
 
   constructor(seo: SeoService) {
     seo.init();
