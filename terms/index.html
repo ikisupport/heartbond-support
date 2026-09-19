@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>Terms of Service | HeartBond</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms of service for HeartBond. The app graphs heart rate for personal tracking, is not a medical device, and defaults to High–low five-minute bins unless you keep all samples on a day.">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icon-384.png">
+  <meta name="theme-color" content="#c989c9" id="meta-theme-color">
+  <!-- Theme tokens live here, not in styles.css, so they apply on the very first
+       paint and a dark-system visitor never sees a light flash. This block is the
+       single source of truth for the palette; styles.css only consumes it via
+       var(--*). Resolved themes are calm (default), classic, and dark.
+
+       Accents are sampled from public/icon-384.png: the pink-lavender field
+       (#ecb4ec, #eca6ec), the cooler periwinkle corner (#bdc5f7), and a
+       deepened magenta for type and buttons. --accent-green is the primary
+       brand accent (named before the icon drove the palette). -->
+  <style id="theme-tokens">
+    :root,
+    html[data-theme="calm"] {
+      color-scheme: light;
+      --bg-color: #f3e6f4;
+      --surface: #ffffff;
+      --surface-2: #f7f1f8;
+      --text-primary: #2a1e2d;
+      --text-secondary: #6b5a6e;
+      --on-accent: #ffffff;
+      --accent-green: #d4a0d0;
+      --accent-green-dark: #8e3f8a;
+      --accent-rose: #eca6dc;
+      --accent-rose-dark: #a34d88;
+      --link-accent: #4f5cc4;
+      --header-gradient: linear-gradient(135deg, #c989c9 0%, #8aa0f0 100%);
+      --rule: rgba(42, 30, 45, 0.12);
+      --h2-rule: rgba(142, 63, 138, 0.28);
+      --card-border: 1px solid rgba(201, 137, 201, 0.35);
+      --card-shadow: 0 2px 24px rgba(42, 30, 45, 0.06);
+      --placeholder-edge: rgba(107, 90, 110, 0.45);
+      --max-width: 760px;
+    }
+    html[data-theme="classic"] {
+      color-scheme: light;
+      --bg-color: #f6eef6;
+      --surface: #ffffff;
+      --surface-2: #fbf7fb;
+      --text-primary: #2c2430;
+      --text-secondary: #5d5362;
+      --rule: rgba(44, 36, 48, 0.14);
+      --h2-rule: rgba(142, 63, 138, 0.28);
+      --card-border: 1px solid rgba(201, 137, 201, 0.22);
+      --card-shadow: 0 4px 20px rgba(42, 30, 45, 0.05);
+      --placeholder-edge: rgba(93, 83, 98, 0.45);
+      --max-width: 800px;
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --bg-color: #161218;
+      --surface: #221c24;
+      --surface-2: #2b232e;
+      --text-primary: #f3eaf4;
+      --text-secondary: #b9a8bc;
+      --on-accent: #1a1218;
+      --accent-green: #c989c9;
+      --accent-green-dark: #d4a3d4;
+      --accent-rose: #e8a8d0;
+      --accent-rose-dark: #d489bc;
+      --link-accent: #c4b0f0;
+      --header-gradient: linear-gradient(135deg, #4a2d4a 0%, #3d3a5a 100%);
+      --rule: rgba(243, 234, 244, 0.14);
+      --h2-rule: rgba(212, 163, 212, 0.35);
+      --card-border: 1px solid rgba(255, 255, 255, 0.08);
+      --card-shadow: 0 4px 28px rgba(0, 0, 0, 0.35);
+      --placeholder-edge: rgba(185, 168, 188, 0.5);
+    }
+  </style>
+  <script>
+    // Resolve and apply the theme before first paint to avoid a flash.
+    // Keep this in step with ThemeService; the two implement the same rule.
+    (function () {
+      var choice = "system";
+      try {
+        var raw = localStorage.getItem("heartbond-theme");
+        if (raw === "system" || raw === "calm" || raw === "classic" || raw === "dark") {
+          choice = raw;
+        }
+      } catch (e) {}
+      var resolved = choice === "system"
+        ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "calm")
+        : choice;
+      document.documentElement.setAttribute("data-theme", resolved);
+    })();
+  </script>
+<style>*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:var(--text-primary);background-color:var(--bg-color);min-height:100vh;display:flex;flex-direction:column;transition:background-color .2s ease,color .2s ease}a:any-link{color:var(--link-accent)}a:any-link:hover{color:var(--accent-green-dark)}a:focus-visible,select:focus-visible{outline:2px solid var(--link-accent);outline-offset:3px;border-radius:3px}app-root,app-terms{display:block;width:100%;min-width:0}.container{width:min(92%,var(--max-width));margin:0 auto}h1,h2{line-height:1.2;font-weight:700;color:var(--text-primary)}h1{font-size:clamp(2.1rem,5vw,2.9rem);letter-spacing:-.02em}h2{font-size:clamp(1.4rem,3.2vw,1.8rem);margin-bottom:.6rem}p{margin-bottom:.9rem}.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}.prose{padding:2.5rem 0 3.5rem}.prose h2{margin-top:2rem;padding-bottom:.35rem;border-bottom:1px solid var(--h2-rule)}.prose p{color:var(--text-secondary)}
+</style><link rel="stylesheet" href="styles-ICOPMYAK.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-ICOPMYAK.css"></noscript><style ng-app-id="ng">[_nghost-ng-c1355898685]{display:flex;flex-direction:column;min-height:100vh}main[_ngcontent-ng-c1355898685]{flex:1 0 auto}.footer[_ngcontent-ng-c1355898685]{border-top:1px solid var(--rule);background:var(--surface);color:var(--text-secondary);font-size:.92rem}.footer__inner[_ngcontent-ng-c1355898685]{text-align:center;padding:2.4rem 0}.footer__links[_ngcontent-ng-c1355898685]{display:flex;justify-content:center;flex-wrap:wrap;gap:.5rem 1.2rem;margin-bottom:1rem}.footer__links[_ngcontent-ng-c1355898685]   a[_ngcontent-ng-c1355898685]{color:var(--text-secondary);text-decoration:none;font-weight:600}.footer__links[_ngcontent-ng-c1355898685]   a[_ngcontent-ng-c1355898685]:hover{color:var(--accent-green-dark)}.footer[_ngcontent-ng-c1355898685]   p[_ngcontent-ng-c1355898685]{margin-bottom:.25rem}.footer__fine[_ngcontent-ng-c1355898685]{font-size:.84rem;opacity:.8}.footer__fine[_ngcontent-ng-c1355898685]     a{color:var(--text-secondary);text-decoration:none;font-weight:600}.footer__fine[_ngcontent-ng-c1355898685]     a:hover{color:var(--accent-green-dark)}</style><link rel="canonical" href="https://heartbond.ikisystems.com/terms/"><meta property="og:type" content="website"><meta property="og:site_name" content="HeartBond"><meta property="og:title" content="Terms of Service | HeartBond"><meta property="og:description" content="Terms of service for HeartBond. The app graphs heart rate for personal tracking, is not a medical device, and defaults to High–low five-minute bins unless you keep all samples on a day."><meta property="og:url" content="https://heartbond.ikisystems.com/terms/"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://heartbond.ikisystems.com/icon-384.png"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Terms of Service | HeartBond"><meta name="twitter:description" content="Terms of service for HeartBond. The app graphs heart rate for personal tracking, is not a medical device, and defaults to High–low five-minute bins unless you keep all samples on a day."><meta name="twitter:image" content="https://heartbond.ikisystems.com/icon-384.png"><style ng-app-id="ng">.nav[_ngcontent-ng-c2123165361]{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg-color) 88%,transparent);backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid var(--rule)}.nav__inner[_ngcontent-ng-c2123165361]{display:flex;align-items:center;gap:1rem 1.5rem;flex-wrap:wrap;padding:.8rem 0}.wordmark[_ngcontent-ng-c2123165361]{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.15rem;letter-spacing:-.01em;color:var(--text-primary);text-decoration:none}.wordmark__icon[_ngcontent-ng-c2123165361]{width:2rem;height:2rem;border:1px solid color-mix(in srgb,var(--text-primary) 22%,transparent);border-radius:22%;overflow:hidden}.nav__links[_ngcontent-ng-c2123165361]{display:flex;gap:.4rem 1.2rem;flex-wrap:wrap;margin-left:auto;font-weight:600;font-size:.94rem}.nav__links[_ngcontent-ng-c2123165361]   a[_ngcontent-ng-c2123165361]{color:var(--text-secondary);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px}.nav__links[_ngcontent-ng-c2123165361]   a[_ngcontent-ng-c2123165361]:hover, .nav__links[_ngcontent-ng-c2123165361]   a.active[_ngcontent-ng-c2123165361]{color:var(--accent-green-dark);border-bottom-color:var(--accent-green)}.theme[_ngcontent-ng-c2123165361]   select[_ngcontent-ng-c2123165361]{font:inherit;font-size:.9rem;padding:.35rem .6rem;border-radius:.5rem;border:1px solid var(--rule);background:var(--surface);color:var(--text-primary);cursor:pointer}@media(max-width:640px){.nav__links[_ngcontent-ng-c2123165361]{margin-left:0;width:100%}}</style><style ng-app-id="ng">.prose__meta[_ngcontent-ng-c3460420704]{color:var(--text-secondary);font-size:.92rem;margin-bottom:1.4rem}</style></head>
+<body><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["click","change"],["blur"]);</script>
+  <app-root ng-version="19.2.25" _nghost-ng-c1355898685 ngh="2" ng-server-context="ssg"><app-navbar _ngcontent-ng-c1355898685 _nghost-ng-c2123165361 ngh="0"><header _ngcontent-ng-c2123165361 class="nav"><div _ngcontent-ng-c2123165361 class="container nav__inner"><a _ngcontent-ng-c2123165361 routerlink="/" aria-label="HeartBond support home" class="wordmark" href="/" jsaction="click:;"><img _ngcontent-ng-c2123165361 src="app-icon.png" width="32" height="32" alt class="wordmark__icon"> HeartBond </a><nav _ngcontent-ng-c2123165361 aria-label="Primary" class="nav__links"><a _ngcontent-ng-c2123165361 routerlink="/" routerlinkactive="active" href="/" class jsaction="click:;">Support</a><a _ngcontent-ng-c2123165361 routerlink="/getting-started" routerlinkactive="active" href="/getting-started" class jsaction="click:;">Getting started</a><a _ngcontent-ng-c2123165361 routerlink="/privacy" routerlinkactive="active" href="/privacy" class jsaction="click:;">Privacy</a><a _ngcontent-ng-c2123165361 routerlink="/terms" routerlinkactive="active" href="/terms" class="active" jsaction="click:;">Terms</a></nav><label _ngcontent-ng-c2123165361 class="theme"><span _ngcontent-ng-c2123165361 class="visually-hidden">Appearance</span><select _ngcontent-ng-c2123165361 aria-label="Appearance" class="ng-untouched ng-pristine ng-valid" jsaction="change:;blur:;"><option _ngcontent-ng-c2123165361 value="system">System</option><option _ngcontent-ng-c2123165361 value="calm">Calm</option><option _ngcontent-ng-c2123165361 value="classic">Classic</option><option _ngcontent-ng-c2123165361 value="dark">Dark</option></select></label></div></header></app-navbar><main _ngcontent-ng-c1355898685><router-outlet _ngcontent-ng-c1355898685></router-outlet><app-terms _nghost-ng-c3460420704 ngh="1"><article _ngcontent-ng-c3460420704 class="container prose"><h1 _ngcontent-ng-c3460420704>Terms of Service</h1><p _ngcontent-ng-c3460420704 class="prose__meta">Plain-language terms for the HeartBond app. This draft has not been reviewed by a lawyer.</p><p _ngcontent-ng-c3460420704>HeartBond graphs heart rate for your own interest and record keeping. The terms below set out what it is, and what it is not.</p><h2 _ngcontent-ng-c3460420704>Not a medical device</h2><p _ngcontent-ng-c3460420704>HeartBond is built for heart rate graphing and personal health tracking. It is not a medical device. Do not use it to diagnose, treat, or manage a medical condition. Talk to a healthcare professional for medical care.</p><!----><h2 _ngcontent-ng-c3460420704>Where the numbers come from</h2><p _ngcontent-ng-c3460420704>The heart data shown comes from the devices you have connected to Health, and reflects the technology and methods those devices use. HeartBond does not verify it.</p><p _ngcontent-ng-c3460420704>For how a given reading was taken, consult the documentation of the device that recorded it.</p><!----><h2 _ngcontent-ng-c3460420704>How the graph is drawn</h2><p _ngcontent-ng-c3460420704>Heart rate defaults to High–low. Samples are grouped into five-minute intervals, and each interval plots its highest and lowest sample in bpm. That keeps the graph readable when it is showing many days at once, and it means an ordinary day is a summary rather than every individual sample.</p><p _ngcontent-ng-c3460420704>Keep all samples on a day retains every reading of that day. Heart rate variability is stored at full sample density.</p><!----><h2 _ngcontent-ng-c3460420704>Support</h2><p _ngcontent-ng-c3460420704>Support is offered through this site and the GitHub Discussions page linked from it. Response times are not guaranteed.</p><!----><h2 _ngcontent-ng-c3460420704>Changes</h2><p _ngcontent-ng-c3460420704>These terms may change as the app changes. The current version is always the one on this page.</p><!----><!----></article></app-terms><!----></main><footer _ngcontent-ng-c1355898685 class="footer"><div _ngcontent-ng-c1355898685 class="container footer__inner"><nav _ngcontent-ng-c1355898685 aria-label="Footer" class="footer__links"><a _ngcontent-ng-c1355898685 routerlink="/" href="/" jsaction="click:;">Support</a><a _ngcontent-ng-c1355898685 routerlink="/getting-started" href="/getting-started" jsaction="click:;">Getting started</a><a _ngcontent-ng-c1355898685 routerlink="/privacy" href="/privacy" jsaction="click:;">Privacy</a><a _ngcontent-ng-c1355898685 routerlink="/terms" href="/terms" jsaction="click:;">Terms</a><a _ngcontent-ng-c1355898685 target="_blank" rel="noopener noreferrer" href="https://ikisystems.com/">IKI Systems</a></nav><p _ngcontent-ng-c1355898685 class="footer__fine">Copyright © 2026 <a href="https://ikisystems.com/" target="_blank" rel="noopener noreferrer">IKI Systems</a>. All rights reserved.</p></div></footer></app-root>
+<script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-ONUPK2H7.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"8":"t5"},"c":{"8":[{"i":"t5","r":3,"t":{"3":"t6"},"c":{"3":[{"i":"t6","r":1}]}},{"i":"t5","r":4,"t":{"3":"t6"},"c":{"3":[{"i":"t6","r":1,"x":2}]},"x":2},{"i":"t5","r":3,"t":{"3":"t6"},"c":{"3":[{"i":"t6","r":1}]},"x":2}]}},{"c":{"2":[{"i":"c3460420704","r":1}]}}]}</script></body></html>
