@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+  <title>HeartBond Support: heart rate graphing for iPhone, iPad, and Mac</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for HeartBond, a heart rate graphing app for iPhone, iPad, and Mac. Reads Apple Health, draws days of heart rate, and syncs your downloaded days through your own iCloud account.">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icon-384.png">
+  <meta name="theme-color" content="#c989c9" id="meta-theme-color">
+  <!-- Theme tokens live here, not in styles.css, so they apply on the very first
+       paint and a dark-system visitor never sees a light flash. This block is the
+       single source of truth for the palette; styles.css only consumes it via
+       var(--*). Resolved themes are calm (default), classic, and dark.
+
+       Accents are sampled from public/icon-384.png: the pink-lavender field
+       (#ecb4ec, #eca6ec), the cooler periwinkle corner (#bdc5f7), and a
+       deepened magenta for type and buttons. --accent-green is the primary
+       brand accent (named before the icon drove the palette). -->
+  <style id="theme-tokens">
+    :root,
+    html[data-theme="calm"] {
+      color-scheme: light;
+      --bg-color: #f3e6f4;
+      --surface: #ffffff;
+      --surface-2: #f7f1f8;
+      --text-primary: #2a1e2d;
+      --text-secondary: #6b5a6e;
+      --on-accent: #ffffff;
+      --accent-green: #d4a0d0;
+      --accent-green-dark: #8e3f8a;
+      --accent-rose: #eca6dc;
+      --accent-rose-dark: #a34d88;
+      --link-accent: #4f5cc4;
+      --header-gradient: linear-gradient(135deg, #c989c9 0%, #8aa0f0 100%);
+      --rule: rgba(42, 30, 45, 0.12);
+      --h2-rule: rgba(142, 63, 138, 0.28);
+      --card-border: 1px solid rgba(201, 137, 201, 0.35);
+      --card-shadow: 0 2px 24px rgba(42, 30, 45, 0.06);
+      --placeholder-edge: rgba(107, 90, 110, 0.45);
+      --max-width: 760px;
+    }
+    html[data-theme="classic"] {
+      color-scheme: light;
+      --bg-color: #f6eef6;
+      --surface: #ffffff;
+      --surface-2: #fbf7fb;
+      --text-primary: #2c2430;
+      --text-secondary: #5d5362;
+      --rule: rgba(44, 36, 48, 0.14);
+      --h2-rule: rgba(142, 63, 138, 0.28);
+      --card-border: 1px solid rgba(201, 137, 201, 0.22);
+      --card-shadow: 0 4px 20px rgba(42, 30, 45, 0.05);
+      --placeholder-edge: rgba(93, 83, 98, 0.45);
+      --max-width: 800px;
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --bg-color: #161218;
+      --surface: #221c24;
+      --surface-2: #2b232e;
+      --text-primary: #f3eaf4;
+      --text-secondary: #b9a8bc;
+      --on-accent: #1a1218;
+      --accent-green: #c989c9;
+      --accent-green-dark: #d4a3d4;
+      --accent-rose: #e8a8d0;
+      --accent-rose-dark: #d489bc;
+      --link-accent: #c4b0f0;
+      --header-gradient: linear-gradient(135deg, #4a2d4a 0%, #3d3a5a 100%);
+      --rule: rgba(243, 234, 244, 0.14);
+      --h2-rule: rgba(212, 163, 212, 0.35);
+      --card-border: 1px solid rgba(255, 255, 255, 0.08);
+      --card-shadow: 0 4px 28px rgba(0, 0, 0, 0.35);
+      --placeholder-edge: rgba(185, 168, 188, 0.5);
+    }
+  </style>
+  <script>
+    // Resolve and apply the theme before first paint to avoid a flash.
+    // Keep this in step with ThemeService; the two implement the same rule.
+    (function () {
+      var choice = "system";
+      try {
+        var raw = localStorage.getItem("heartbond-theme");
+        if (raw === "system" || raw === "calm" || raw === "classic" || raw === "dark") {
+          choice = raw;
+        }
+      } catch (e) {}
+      var resolved = choice === "system"
+        ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "calm")
+        : choice;
+      document.documentElement.setAttribute("data-theme", resolved);
+    })();
+  </script>
+<style>*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:var(--text-primary);background-color:var(--bg-color);min-height:100vh;display:flex;flex-direction:column;transition:background-color .2s ease,color .2s ease}app-root{display:block;width:100%;min-width:0}</style><link rel="stylesheet" href="styles-ICOPMYAK.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-ICOPMYAK.css"></noscript></head>
+<body ngcm="">
+  <app-root></app-root>
+<script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-QVSN4KUR.js" type="module"></script></body>
+</html>
