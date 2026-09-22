@@ -28,8 +28,8 @@ import COPY from '../../content/copy.json';
             class="hero__shot"
             [src]="copy.screenshot.src"
             [alt]="copy.screenshot.alt"
-            width="3104"
-            height="1586"
+            width="2880"
+            height="1344"
             fetchpriority="high">
         </div>
         <figcaption class="hero__caption">
@@ -135,12 +135,19 @@ import COPY from '../../content/copy.json';
       margin: 1.8rem auto 0;
     }
 
-    /* hero-mac.png is the CleanShot window capture: the Mac window sits in a
-       soft alpha shadow field. A CSS drop-shadow or border-radius follows
-       that field, not the window edge, so the frame is only a size constraint. */
+    /* The capture is flush to the window. Its corner is a 32.5px circle on
+       the 2880×1344 file. A single percentage would turn that into an ellipse,
+       because each axis resolves against a different side, so the two values
+       keep the curve circular as the image scales. The file's top and bottom
+       hairline is lighter than the sides. A translucent ring would blend with
+       that and stay uneven, so the overlay is an opaque 1px stroke. No drop
+       shadow. */
     .hero__frame {
-      width: min(92%, 900px);
+      position: relative;
+      width: min(92%, var(--max-width));
       margin: 0 auto;
+      border-radius: 1.128% / 2.418%;
+      overflow: hidden;
     }
 
     .hero__shot {
@@ -149,12 +156,22 @@ import COPY from '../../content/copy.json';
       height: auto;
     }
 
+    .hero__frame::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      box-sizing: border-box;
+      border-radius: inherit;
+      pointer-events: none;
+      border: 1px solid #5a5b5e;
+    }
+
     .hero__caption {
       width: min(92%, var(--max-width));
-      /* 148px is the transparent pad under the window in the 3104-wide PNG.
-         Pull the caption up by that amount so the gap tracks the window, not
-         the image box. 2rem is the remaining space under the chrome. */
-      margin: calc(2rem - min(92%, 900px) * 148 / 3104) auto 0;
+      /* The 2880×1344 capture has no transparent pad under the window
+         (bottom pad is 0px), so the caption sits a normal 2rem below it. */
+      margin: 2rem auto 0;
       color: var(--text-secondary);
       font-size: 0.84rem;
       line-height: 1.5;
