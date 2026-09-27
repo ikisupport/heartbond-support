@@ -1,11 +1,10 @@
 # HeartBond support website
 
-Angular 19 with SSR. Nested git repo inside `Bond-AI`. Gitea remote:
-`ssh://daniel@192.168.200.99:2222/d108/heartbond-support.git`. GitHub remote:
+Angular 19 with SSR. Nested git repo inside `Bond-AI`. GitHub remote:
 `ikisupport/heartbond-support`. Public host is `heartbond.ikisystems.com`.
 
 ```sh
-make start-local-support-website   # http://localhost:4200
+make start-local-support-website   # http://localhost:4202
 make build                         # prerender + SSR build, proves the wiring
 ```
 

@@ -1,7 +1,10 @@
 -include .env
 export
 
-PORT     ?= 4200
+# 4202 matches the heartbond-web pane in the `support-websites` tmux
+# environment (SpeakWith's support site gets 4201). Both sit off Angular's
+# default 4200 so a hand-run `ng serve` never collides with a pane.
+PORT     ?= 4202
 
 .PHONY: install-deps start-local-support-website build
 
