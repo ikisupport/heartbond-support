@@ -28,8 +28,8 @@ import COPY from '../../content/copy.json';
             class="hero__shot"
             [src]="copy.screenshot.src"
             [alt]="copy.screenshot.alt"
-            width="2738"
-            height="1326"
+            width="3104"
+            height="1586"
             fetchpriority="high">
         </div>
         <figcaption class="hero__caption">
@@ -135,24 +135,12 @@ import COPY from '../../content/copy.json';
       margin: 1.8rem auto 0;
     }
 
-    /* hero-mac.png carries its own rounded corners in its alpha channel: a
-       26 px transparent run at 2738 wide, which scales with the rendered
-       image. A CSS border-radius is a fixed px value, so it can only match
-       that curve at one viewport width. Everywhere else the frame's arc cuts
-       across the shot's transparent corner and the band shows through as a
-       light crescent. That mismatch is the corner artifact. The shot is the
-       shape: no radius, no border, no clip. drop-shadow follows the alpha
-       outline; box-shadow would trace the rect and reintroduce the arc.
-       The window chrome is a single device pixel at the PNG edge; at the
-       ~0.33x downscale the browser resamples it away. Redraw it at render
-       resolution with 0-blur drop-shadows. --rule is too faint for this;
-       --shot-edge is the token that makes the hairline read. */
+    /* hero-mac.png is the CleanShot window capture: the Mac window sits in a
+       soft alpha shadow field. A CSS drop-shadow or border-radius follows
+       that field, not the window edge, so the frame is only a size constraint. */
     .hero__frame {
       width: min(92%, 900px);
       margin: 0 auto;
-      filter: drop-shadow(1px 0 0 var(--shot-edge)) drop-shadow(-1px 0 0 var(--shot-edge))
-        drop-shadow(0 1px 0 var(--shot-edge)) drop-shadow(0 -1px 0 var(--shot-edge))
-        drop-shadow(var(--card-shadow));
     }
 
     .hero__shot {
@@ -163,7 +151,10 @@ import COPY from '../../content/copy.json';
 
     .hero__caption {
       width: min(92%, var(--max-width));
-      margin: 0.9rem auto 0;
+      /* 148px is the transparent pad under the window in the 3104-wide PNG.
+         Pull the caption up by that amount so the gap tracks the window, not
+         the image box. 2rem is the remaining space under the chrome. */
+      margin: calc(2rem - min(92%, 900px) * 148 / 3104) auto 0;
       color: var(--text-secondary);
       font-size: 0.84rem;
       line-height: 1.5;
