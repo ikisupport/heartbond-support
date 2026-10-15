@@ -21,10 +21,14 @@
         "home": "Support",
         "gettingStarted": "Getting started",
         "privacy": "Privacy",
-        "terms": "Terms"
+        "terms": "Terms",
+        "ikiSystems": "IKI Systems"
       },
-      "copyright": "Copyright © {{year}} IKI Systems. All rights reserved."
+      "copyrightHtml": "Copyright © {{year}} <a href=\"{{ikiSystemsHome}}\" target=\"_blank\" rel=\"noopener noreferrer\">IKI Systems</a>. All rights reserved."
     }
+  },
+  "links": {
+    "ikiSystemsHome": "https://ikisystems.com/"
   },
   "home": {
     "hero": {
