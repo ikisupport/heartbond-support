@@ -117,7 +117,7 @@
   },
   "gettingStarted": {
     "heading": "Getting started",
-    "meta": "The same order the app uses: allow Health, download days, then let iCloud carry them across.",
+    "meta": "The same order the app uses: allow Health, download days, then let iCloud carry them across your devices.",
     "intro": "On iPhone or iPad, HeartBond asks to read Health, then offers the latest 10 days. Those days appear on your other devices through your iCloud account.",
     "sections": [
       {
@@ -126,7 +126,15 @@
           "On iPhone or iPad, HeartBond asks for permission to read heart rate, heart rate variability (SDNN), and heartbeat series from Health. Grant it. The app does not write to Health.",
           "Nothing is read before you grant access. You can review or withdraw that access in the Health app under Sources."
         ],
-        "placeholder": "Walkthrough screenshots go here."
+        "placeholder": "",
+        "figure": {
+          "src": "getting-started-health-access.png",
+          "alt": "The Health Access sheet on iPhone in dark mode, with Beat-to-Beat Measurements, Heart Rate, and Heart Rate Variability turned on.",
+          "caption": [
+            "Health Access. iOS asks for permission before HeartBond can read Health data.",
+            "Beat-to-Beat Measurements, Heart Rate, and Heart Rate Variability are the three topics HeartBond requests. Turn off any topic you do not want to share."
+          ]
+        }
       },
       {
         "heading": "Download days",
@@ -134,15 +142,24 @@
           "The first run offers the latest 10 days. After that, the menu can download 10, 30, or 60 more days. A tap on the header fetches the current day and the previous day.",
           "Choose how far back you want to go. You do not have to import everything at once."
         ],
-        "placeholder": "Download-days walkthrough goes here."
+        "placeholder": "",
+        "figure": {
+          "src": "getting-started-download-days.png",
+          "alt": "The Download menu on iPhone, open after tapping the cloud icon, listing Download 10, 30, or 60 more days and Delete earliest days options.",
+          "caption": [
+            "Download menu. Tap the cloud icon to load available days or free up space.",
+            "Choose 10, 30, or 60 more days to download, or delete the earliest days you no longer need."
+          ]
+        }
       },
       {
-        "heading": "Let iCloud carry the days across",
+        "heading": "Let iCloud carry the days across your devices",
         "paragraphs": [
           "Downloaded days sync through your iCloud account to every device signed in to it. iCloud mirrors in the background. A day appears on another device once one of its samples has landed.",
           "If Health download is not available on a Mac, fetch on your iPhone or iPad. Days sync to the Mac over iCloud. A Mac without Health cannot fill a day itself."
         ],
-        "placeholder": ""
+        "placeholder": "",
+        "figure": null
       },
       {
         "heading": "Keep all samples, when you want them",
@@ -150,7 +167,8 @@
           "Days default to High–low: the highest and lowest reading per five minutes. Tick Keep all samples on a day's row (or choose it from the row menu) to keep every Health sample of that day. Later downloads of it stay full. This is a standing one-day instruction, not a switch that fills your whole history.",
           "Heart rate variability is stored at full sample density. It has no High–low collapse."
         ],
-        "placeholder": ""
+        "placeholder": "",
+        "figure": null
       }
     ]
   },
