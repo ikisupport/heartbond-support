@@ -1,0 +1,259 @@
+{
+  "nav": {
+    "wordmark": "HeartBond",
+    "links": {
+      "home": "Support",
+      "gettingStarted": "Getting started",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "theme": {
+      "label": "Appearance",
+      "system": "System",
+      "calm": "Calm",
+      "classic": "Classic",
+      "dark": "Dark"
+    }
+  },
+  "app": {
+    "footer": {
+      "links": {
+        "home": "Support",
+        "gettingStarted": "Getting started",
+        "privacy": "Privacy",
+        "terms": "Terms"
+      },
+      "copyright": "Copyright © {{year}} IKI Systems. All rights reserved."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Heart rate graphing for Apple Health",
+      "headline": "Your Health Remastered",
+      "lead": "HeartBond reads the heart rate your Apple Watch, Oura Ring, and other Health sources already record, then draws each day as a graph. Open any date you want to return to, on iPhone, iPad, and Mac.",
+      "graph": "Plot every sample when you want fine detail. Or use the High–low line: the highest and lowest reading in each five-minute period.",
+      "note": "Your data stays in Apple Health and your own iCloud account. HeartBond asks before it reads anything."
+    },
+    "store": {
+      "heading": "Get HeartBond",
+      "leadBefore": "HeartBond is on the App Store for iPhone and iPad, and on the Mac App Store. ",
+      "leadLink": "Getting started",
+      "leadAfter": " walks through Health access, downloading days, iCloud, and Keep all samples.",
+      "badges": [
+        {
+          "id": "ios",
+          "href": "https://apps.apple.com/app/apple-store/id6449156557?pt=126040921&ct=Get-HeartBond&mt=8",
+          "src": "badges/app-store.svg",
+          "srcDark": "badges/app-store-wht.svg",
+          "alt": "Download on the App Store"
+        },
+        {
+          "id": "mac",
+          "href": "https://apps.apple.com/app/apple-store/id6449156557?pt=126040921&ct=Get-HeartBond&mt=12",
+          "src": "badges/mac-app-store.svg",
+          "srcDark": "badges/mac-app-store-wht.svg",
+          "alt": "Download on the Mac App Store"
+        },
+        {
+          "id": "health",
+          "href": "https://www.apple.com/health/",
+          "src": "badges/apple-health.svg",
+          "alt": "Works with Apple Health"
+        }
+      ]
+    },
+    "screenshot": {
+      "src": "hero-mac.png",
+      "alt": "HeartBond on Mac, two days of Synthetic Data.",
+      "caption": [
+        "HeartBond on Mac. The upper day keeps all samples and plots Watch (blue) and Ring (purple) as a point cloud. The lower day is the High–low line: the highest and lowest reading in each five-minute span.",
+        "The Synthetic Data chip means these traces are generated for the graph. They are not a person's Health record, so this page does not publish private heart data.",
+        "Private Data is the other environment. HeartBond asks before it reads Apple Health. Downloaded days sync through your own iCloud account. There is no HeartBond server holding them."
+      ]
+    },
+    "features": {
+      "heading": "What the app does",
+      "items": [
+        {
+          "title": "A graph you can read",
+          "body": "Heart rate defaults to High–low: each five-minute bin plots its highest and lowest sample in bpm. That keeps many days on screen at once. Tick Keep all samples on a day to retain every reading of it instead."
+        },
+        {
+          "title": "How you look at the days",
+          "body": "Days sit in one continuous list. Move through them in order, or pick a date and land on that row. The default drawing is a line. A day that keeps all samples can appear as a point cloud of every stored reading."
+        },
+        {
+          "title": "Health is the source",
+          "body": "Samples come from the devices you have connected to Health, through Apple's HealthKit framework. HeartBond asks for access first and reads only what you allow. Apple Watch and Oura Ring are Health sources, not separate logins."
+        },
+        {
+          "title": "The same days on every device",
+          "body": "Your downloaded days sync through your own iCloud account, so an iPhone, an iPad, and a Mac show the same history. A Mac that cannot fetch Health still receives days you download on iPhone or iPad."
+        },
+        {
+          "title": "Colors and graph size",
+          "body": "Each device series can have its own color. You can expand or contract the graph's height and width, and switch between fitting the plot and filling the view."
+        }
+      ]
+    },
+    "help": {
+      "heading": "We can help with",
+      "items": [
+        "Reading and understanding your heart rate data",
+        "Syncing between your devices",
+        "Customizing colors and graph sizes",
+        "General questions about the app"
+      ],
+      "discussionsBefore": "Questions, concerns, or anything related to HeartBond can go on the",
+      "discussionsLabel": "GitHub Discussions page",
+      "discussionsHref": "https://github.com/ikiapps/HeartBond-Support/discussions",
+      "discussionsAfter": ".",
+      "note": ""
+    }
+  },
+  "gettingStarted": {
+    "heading": "Getting started",
+    "meta": "The same order the app uses: allow Health, download days, then let iCloud carry them across.",
+    "intro": "On iPhone or iPad, HeartBond asks to read Health, then offers the latest 10 days. Those days appear on your other devices through your iCloud account.",
+    "sections": [
+      {
+        "heading": "Allow access to Health",
+        "paragraphs": [
+          "On iPhone or iPad, HeartBond asks for permission to read heart rate, heart rate variability (SDNN), and heartbeat series from Health. Grant it. The app does not write to Health.",
+          "Nothing is read before you grant access. You can review or withdraw that access in the Health app under Sources."
+        ],
+        "placeholder": "Walkthrough screenshots go here."
+      },
+      {
+        "heading": "Download days",
+        "paragraphs": [
+          "The first run offers the latest 10 days. After that, the menu can download 10, 30, or 60 more days. A tap on the header fetches the current day and the previous day.",
+          "Choose how far back you want to go. You do not have to import everything at once."
+        ],
+        "placeholder": "Download-days walkthrough goes here."
+      },
+      {
+        "heading": "Let iCloud carry the days across",
+        "paragraphs": [
+          "Downloaded days sync through your iCloud account to every device signed in to it. iCloud mirrors in the background. A day appears on another device once one of its samples has landed.",
+          "If Health download is not available on a Mac, fetch on your iPhone or iPad. Days sync to the Mac over iCloud. A Mac without Health cannot fill a day itself."
+        ],
+        "placeholder": ""
+      },
+      {
+        "heading": "Keep all samples, when you want them",
+        "paragraphs": [
+          "Days default to High–low: the highest and lowest reading per five minutes. Tick Keep all samples on a day's row (or choose it from the row menu) to keep every Health sample of that day. Later downloads of it stay full. This is a standing one-day instruction, not a switch that fills your whole history.",
+          "Heart rate variability is stored at full sample density. It has no High–low collapse."
+        ],
+        "placeholder": ""
+      }
+    ]
+  },
+  "privacy": {
+    "heading": "Privacy Policy",
+    "meta": "This page describes how HeartBond handles your health data.",
+    "intro": "HeartBond reads health data from Apple Health and stores your downloaded days in your own iCloud account. There is no HeartBond account and no HeartBond server holding that data.",
+    "sections": [
+      {
+        "heading": "Consent",
+        "paragraphs": [
+          "The app follows Apple's privacy guidelines and asks for your explicit consent before reading health data. You can review or withdraw that access in the Health app at any time."
+        ]
+      },
+      {
+        "heading": "What is read",
+        "paragraphs": [
+          "HeartBond requests permission to read heart rate, heart rate variability (SDNN), and heartbeat series. It graphs heart rate and HRV. It does not write samples back to Health."
+        ]
+      },
+      {
+        "heading": "HealthKit",
+        "paragraphs": [
+          "On iPhone and iPad, health data is read through Apple's HealthKit framework, which governs how that information is requested, stored, and protected on the device. A Mac reads Health only when the system reports it as available. Otherwise it shows days that arrived over iCloud."
+        ]
+      },
+      {
+        "heading": "iCloud sync",
+        "paragraphs": [
+          "The app follows Apple's iCloud guidelines and uses iCloud only for content you choose to sync across your own devices. Downloaded sample days, Keep all samples markers, and per-device graph colors travel through your iCloud account. Graph size and most display preferences stay on that device."
+        ]
+      },
+      {
+        "heading": "Security",
+        "paragraphs": [
+          "Health data is encrypted in transit while it moves between your devices through iCloud."
+        ]
+      },
+      {
+        "heading": "App Store guidelines",
+        "paragraphs": [
+          "HeartBond follows the App Store Review Guidelines that apply to health, privacy, safety, and functionality."
+        ]
+      },
+      {
+        "heading": "Medical disclaimer",
+        "paragraphs": [
+          "HeartBond is not a medical device and is not a substitute for professional medical advice, diagnosis, or treatment."
+        ]
+      },
+      {
+        "heading": "Regional rules",
+        "paragraphs": [
+          "Health data laws differ by territory. The app is built to meet the rules that apply where it is offered."
+        ]
+      },
+      {
+        "heading": "This website",
+        "paragraphs": [
+          "This support site carries no analytics or tracking scripts. If that changes, this section will say what is collected and by whom."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "heading": "Terms of Service",
+    "meta": "Plain-language terms for the HeartBond app. This draft has not been reviewed by a lawyer.",
+    "intro": "HeartBond graphs heart rate for your own interest and record keeping. The terms below set out what it is, and what it is not.",
+    "sections": [
+      {
+        "heading": "Not a medical device",
+        "paragraphs": [
+          "HeartBond is built for heart rate graphing and personal health tracking. It is not a medical device. Do not use it to diagnose, treat, or manage a medical condition. Talk to a healthcare professional for medical care."
+        ]
+      },
+      {
+        "heading": "Where the numbers come from",
+        "paragraphs": [
+          "The heart data shown comes from the devices you have connected to Health, and reflects the technology and methods those devices use. HeartBond does not verify it.",
+          "For how a given reading was taken, consult the documentation of the device that recorded it."
+        ]
+      },
+      {
+        "heading": "How the graph is drawn",
+        "paragraphs": [
+          "Heart rate defaults to High–low. Samples are grouped into five-minute intervals, and each interval plots its highest and lowest sample in bpm. That keeps the graph readable when it is showing many days at once, and it means an ordinary day is a summary rather than every individual sample.",
+          "Keep all samples on a day retains every reading of that day. Heart rate variability is stored at full sample density."
+        ]
+      },
+      {
+        "heading": "Support",
+        "paragraphs": [
+          "Support is offered through this site and the GitHub Discussions page linked from it. Response times are not guaranteed."
+        ]
+      },
+      {
+        "heading": "Changes",
+        "paragraphs": [
+          "These terms may change as the app changes. The current version is always the one on this page."
+        ]
+      }
+    ]
+  },
+  "notFound": {
+    "code": "404",
+    "heading": "That page is not here",
+    "lead": "The link may be out of date, or slightly off. The support page is a good place to restart.",
+    "cta": "Back to support"
+  }
+}
