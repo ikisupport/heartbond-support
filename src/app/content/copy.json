@@ -32,10 +32,10 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Heart rate graphing for Apple Health",
+      "eyebrow": "Heart rate, HRV and sleep for Apple Health",
       "headline": "Your Health Remastered",
-      "lead": "HeartBond reads the heart rate your Apple Watch, Oura Ring, and other Health sources already record, then draws each day as a graph. Open any date you want to return to, on iPhone, iPad, and Mac.",
-      "graph": "Plot every sample when you want fine detail. Or use the High–low line: the highest and lowest reading in each five-minute period.",
+      "lead": "HeartBond reads the heart rate and sleep your Apple Watch, Oura Ring, and other Health sources already record, then draws each day as a graph. Open any date you want to return to, on iPhone, iPad, and Mac.",
+      "graph": "Plot every sample when you want fine detail. Or use the High–low line: the highest and lowest reading in each five-minute period. Each night's sleep stages sit behind the heart rate, with the time asleep in the legend.",
       "note": "Your data stays in Apple Health and your own iCloud account. HeartBond asks before it reads anything."
     },
     "store": {
@@ -67,11 +67,11 @@
       ]
     },
     "screenshot": {
-      "src": "hero-mac-20260922.png",
-      "alt": "HeartBond on Mac, two days of Synthetic Data.",
+      "src": "hero-mac-20261014.png",
+      "alt": "HeartBond on Mac, two days of Demo Data with heart rate and sleep stages.",
       "caption": [
-        "HeartBond on Mac. The upper day keeps all samples and plots Watch (grey) and Ring (magenta) as a point cloud. The lower day is the High–low line: the highest and lowest reading in each five-minute span.",
-        "The Synthetic Data chip means these traces are generated for the graph. They are not a person's Health record, so this page does not publish private heart data.",
+        "HeartBond on Mac. The upper day draws Watch (blue) and Ring (violet) as lines. The lower day keeps all samples and plots them as a point cloud, with a spike near 11:00. Each night's sleep stages sit behind the heart rate, with the total in the legend: 6h30 asleep as REM 1h40, Core 3h15, and Deep 1h35 above, and 7h40 as REM 1h40, Core 3h50, and Deep 2h10 below.",
+        "The Demo Data chip means these traces are generated for the graph, sleep stages included. They are not a person's Health record, so this page does not publish private health data.",
         "Private Data is the other environment. HeartBond asks before it reads Apple Health. Downloaded days sync through your own iCloud account. There is no HeartBond server holding them."
       ]
     },
@@ -85,6 +85,10 @@
         {
           "title": "How you look at the days",
           "body": "Days sit in one continuous list. Move through them in order, or pick a date and land on that row. The default drawing is a line. A day that keeps all samples can appear as a point cloud of every stored reading."
+        },
+        {
+          "title": "Sleep behind the heart rate",
+          "body": "Each night's sleep from Health is drawn as a band behind that day's heart rate, with REM, Core, and Deep stages and the total time asleep in the legend. Sleep comes from your Private Data in Health. You can hide the bands when you only want the heart rate."
         },
         {
           "title": "Health is the source",
@@ -123,7 +127,7 @@
       {
         "heading": "Allow access to Health",
         "paragraphs": [
-          "On iPhone or iPad, HeartBond asks for permission to read heart rate, heart rate variability (SDNN), and heartbeat series from Health. Grant it. The app does not write to Health.",
+          "On iPhone or iPad, HeartBond asks for permission to read heart rate, heart rate variability (SDNN), heartbeat series, and sleep analysis from Health. Grant it. The app does not write to Health.",
           "Nothing is read before you grant access. You can review or withdraw that access in the Health app under Sources."
         ],
         "placeholder": "",
@@ -132,7 +136,7 @@
           "alt": "The Health Access sheet on iPhone in dark mode, with Beat-to-Beat Measurements, Heart Rate, and Heart Rate Variability turned on.",
           "caption": [
             "Health Access. iOS asks for permission before HeartBond can read Health data.",
-            "Beat-to-Beat Measurements, Heart Rate, and Heart Rate Variability are the three topics HeartBond requests. Turn off any topic you do not want to share."
+            "Beat-to-Beat Measurements, Heart Rate, Heart Rate Variability, and Sleep are the topics HeartBond requests. This sheet predates Sleep. Turn off any topic you do not want to share."
           ]
         }
       },
@@ -186,7 +190,7 @@
       {
         "heading": "What is read",
         "paragraphs": [
-          "HeartBond requests permission to read heart rate, heart rate variability (SDNN), and heartbeat series. It graphs heart rate and HRV. It does not write samples back to Health."
+          "HeartBond requests permission to read heart rate, heart rate variability (SDNN), heartbeat series, and sleep analysis. It graphs heart rate and HRV, and draws each night's sleep stages behind them. It does not write samples back to Health."
         ]
       },
       {

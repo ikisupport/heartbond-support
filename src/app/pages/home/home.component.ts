@@ -5,7 +5,7 @@ import COPY from '../../content/copy.json';
 /**
  * Support home. Store badges are the official Apple artwork (black lockup
  * on light themes, white lockup on dark) and the live App Store ID. The
- * hero uses a current Mac capture of Synthetic Data, which is a product
+ * hero uses a current Mac capture of Demo Data, which is a product
  * environment, not a demo watermark.
  */
 @Component({
@@ -29,7 +29,7 @@ import COPY from '../../content/copy.json';
             [src]="copy.screenshot.src"
             [alt]="copy.screenshot.alt"
             width="2880"
-            height="1344"
+            height="1232"
             fetchpriority="high">
         </div>
         <figcaption class="hero__caption">
@@ -136,7 +136,7 @@ import COPY from '../../content/copy.json';
     }
 
     /* The capture is flush to the window. Its corner is a 32.5px circle on
-       the 2880×1344 file. A single percentage would turn that into an ellipse,
+       the 2880×1232 file. A single percentage would turn that into an ellipse,
        because each axis resolves against a different side, so the two values
        keep the curve circular as the image scales. The file's top and bottom
        hairline is lighter than the sides. A translucent ring would blend with
@@ -146,7 +146,7 @@ import COPY from '../../content/copy.json';
       position: relative;
       width: min(92%, var(--max-width));
       margin: 0 auto;
-      border-radius: 1.128% / 2.418%;
+      border-radius: 1.128% / 2.638%;
       overflow: hidden;
     }
 
@@ -169,7 +169,7 @@ import COPY from '../../content/copy.json';
 
     .hero__caption {
       width: min(92%, var(--max-width));
-      /* The 2880×1344 capture has no transparent pad under the window
+      /* The 2880×1232 capture has no transparent pad under the window
          (bottom pad is 0px), so the caption sits a normal 2rem below it. */
       margin: 2rem auto 0;
       color: var(--text-secondary);
