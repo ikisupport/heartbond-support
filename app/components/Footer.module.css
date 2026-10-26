@@ -1,0 +1,56 @@
+/* Was the footer half of app.component.ts's `styles:` block. The shell's own
+   `:host` and `main` rules live in app/root.module.css; these are the rules
+   that only ever applied to the footer.
+
+   The `::ng-deep` qualifiers Angular needed on the copyright line are gone:
+   that paragraph is still set as HTML, but a CSS Module hashes only the class
+   it is written on, so a descendant `a` in injected markup is matched by an
+   ordinary descendant selector. */
+.footer {
+  border-top: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.footer__inner {
+  text-align: center;
+  padding: 2.4rem 0;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer__links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__links a:hover {
+  color: var(--accent-green-dark);
+}
+
+.footer p {
+  margin-bottom: 0.25rem;
+}
+
+.footer__fine {
+  font-size: 0.84rem;
+  opacity: 0.8;
+}
+
+.footer__fine a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__fine a:hover {
+  color: var(--accent-green-dark);
+}

@@ -1,0 +1,43 @@
+/* From getting-started.component.ts's `styles` block. */
+.prose__meta {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  margin-bottom: 1.4rem;
+}
+
+:global(.placeholder) {
+  margin: 1rem 0 0.5rem;
+  padding: 1.5rem 1.25rem;
+}
+
+.prose__figure {
+  width: min(100%, 300px);
+  margin: 1.4rem auto 1rem;
+}
+
+.prose__shot {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.prose__caption {
+  margin-top: 0.8rem;
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.prose__caption p {
+  margin-bottom: 0.5rem;
+}
+
+.prose__caption p:first-child {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.prose__caption p:last-child {
+  margin-bottom: 0;
+}
