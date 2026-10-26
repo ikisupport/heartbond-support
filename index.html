@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="/app-icon.png"/><link rel="preload" as="image" href="/icon-384.png"/><link rel="preload" as="image" href="/hero-mac-20261014.png" fetchPriority="high"/><link rel="preload" as="image" href="/badges/app-store.svg"/><link rel="preload" as="image" href="/badges/app-store-wht.svg"/><link rel="preload" as="image" href="/badges/mac-app-store.svg"/><link rel="preload" as="image" href="/badges/mac-app-store-wht.svg"/><link rel="preload" as="image" href="/badges/apple-health.svg"/><meta name="theme-color" content="#c989c9" id="meta-theme-color"/><title>HeartBond Support: heart rate graphing for iPhone, iPad, and Mac</title><meta name="description" content="Support for HeartBond, a heart rate graphing app for iPhone, iPad, and Mac. Reads Apple Health, draws days of heart rate in five-minute bins, and syncs your downloaded days through your own iCloud account."/><link rel="canonical" href="https://heartbond.ikisystems.com/"/><meta property="og:type" content="website"/><meta property="og:site_name" content="HeartBond"/><meta property="og:title" content="HeartBond Support: heart rate graphing for iPhone, iPad, and Mac"/><meta property="og:description" content="Support for HeartBond, a heart rate graphing app for iPhone, iPad, and Mac. Reads Apple Health, draws days of heart rate in five-minute bins, and syncs your downloaded days through your own iCloud account."/><meta property="og:url" content="https://heartbond.ikisystems.com/"/><meta property="og:locale" content="en_US"/><meta property="og:image" content="https://heartbond.ikisystems.com/icon-384.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="HeartBond Support: heart rate graphing for iPhone, iPad, and Mac"/><meta name="twitter:description" content="Support for HeartBond, a heart rate graphing app for iPhone, iPad, and Mac. Reads Apple Health, draws days of heart rate in five-minute bins, and syncs your downloaded days through your own iCloud account."/><meta name="twitter:image" content="https://heartbond.ikisystems.com/icon-384.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png"/><link rel="icon" type="image/x-icon" href="/favicon.ico"/><link rel="apple-touch-icon" href="/icon-384.png"/><link rel="modulepreload" href="/assets/manifest-78aa19f4.js"/><link rel="modulepreload" href="/assets/entry.client-CXCBEhj1.js"/><link rel="modulepreload" href="/assets/jsx-runtime-F7w9VrsA.js"/><link rel="modulepreload" href="/assets/root-hrIv87wH.js"/><link rel="modulepreload" href="/assets/locale-DL503dbO.js"/><link rel="modulepreload" href="/assets/asset-C-rVqAQZ.js"/><link rel="modulepreload" href="/assets/home-CYwne_-0.js"/><link rel="modulepreload" href="/assets/head-Bn0z8Pbl.js"/><link rel="modulepreload" href="/assets/cx-2dOUpm6k.js"/><style id="theme-tokens">/* The palette. Inlined into every page's <head> before the deferred
+   stylesheet loads, which is what stops a light flash on dark systems.
+   styles.css only consumes these via var(--*); this file is the one place a
+   colour is defined. Resolved themes are calm (default), classic, and dark.
+
+   Accents are sampled from public/icon-384.png: the pink-lavender field
+   (#ecb4ec, #eca6ec), the cooler periwinkle corner (#bdc5f7), and a deepened
+   magenta for type and buttons. --accent-green is the primary brand accent
+   (named before the icon drove the palette).
+
+   Build step: scripts/extract-theme-prelude.mjs inlines this verbatim. It was
+   an inline <style> in the Angular site's index.html; extracting it means the
+   palette is now a real stylesheet that can be linted and diffed. */
+:root,
+html[data-theme="calm"] {
+  color-scheme: light;
+  --bg-color: #f3e6f4;
+  --surface: #ffffff;
+  --surface-2: #f7f1f8;
+  --text-primary: #2a1e2d;
+  --text-secondary: #6b5a6e;
+  --on-accent: #ffffff;
+  --accent-green: #d4a0d0;
+  --accent-green-dark: #8e3f8a;
+  --accent-rose: #eca6dc;
+  --accent-rose-dark: #a34d88;
+  --link-accent: #4f5cc4;
+  --header-gradient: linear-gradient(135deg, #c989c9 0%, #8aa0f0 100%);
+  --rule: rgba(42, 30, 45, 0.12);
+  --h2-rule: rgba(142, 63, 138, 0.28);
+  --card-border: 1px solid rgba(201, 137, 201, 0.35);
+  --card-shadow: 0 2px 24px rgba(42, 30, 45, 0.06);
+  --placeholder-edge: rgba(107, 90, 110, 0.45);
+  --max-width: 760px;
+}
+html[data-theme="classic"] {
+  color-scheme: light;
+  --bg-color: #f6eef6;
+  --surface: #ffffff;
+  --surface-2: #fbf7fb;
+  --text-primary: #2c2430;
+  --text-secondary: #5d5362;
+  --rule: rgba(44, 36, 48, 0.14);
+  --h2-rule: rgba(142, 63, 138, 0.28);
+  --card-border: 1px solid rgba(201, 137, 201, 0.22);
+  --card-shadow: 0 4px 20px rgba(42, 30, 45, 0.05);
+  --placeholder-edge: rgba(93, 83, 98, 0.45);
+  --max-width: 800px;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-color: #161218;
+  --surface: #221c24;
+  --surface-2: #2b232e;
+  --text-primary: #f3eaf4;
+  --text-secondary: #b9a8bc;
+  --on-accent: #1a1218;
+  --accent-green: #c989c9;
+  --accent-green-dark: #d4a3d4;
+  --accent-rose: #e8a8d0;
+  --accent-rose-dark: #d489bc;
+  --link-accent: #c4b0f0;
+  --header-gradient: linear-gradient(135deg, #4a2d4a 0%, #3d3a5a 100%);
+  --rule: rgba(243, 234, 244, 0.14);
+  --h2-rule: rgba(212, 163, 212, 0.35);
+  --card-border: 1px solid rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 4px 28px rgba(0, 0, 0, 0.35);
+  --placeholder-edge: rgba(185, 168, 188, 0.5);
+}
+</style><script>// Resolve and apply the saved theme before first paint, so the page never
+// flashes the wrong palette. Inlined into every page's <head> verbatim by
+// scripts/extract-theme-prelude.mjs, ahead of any React code: it must run
+// synchronously and cannot be a module.
+//
+// app/lib/theme.tsx implements the same resolution rule for the live page.
+// These two are still a pair — this one runs before React exists and cannot
+// import from it — so a change to the rule belongs in both. What extraction
+// did remove is the palette duplication: the tokens have one source now.
+(function () {
+  var choice = "system";
+  try {
+    var raw = localStorage.getItem("heartbond-theme");
+    if (raw === "system" || raw === "calm" || raw === "classic" || raw === "dark") {
+      choice = raw;
+    }
+  } catch (e) {}
+  var resolved = choice === "system"
+    ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "calm")
+    : choice;
+  document.documentElement.setAttribute("data-theme", resolved);
+})();
+</script><link rel="stylesheet" href="/assets/root-eClzD8St.css"/><link rel="stylesheet" href="/assets/home-DcI14JeC.css"/></head><body><app-root class="_shell_ypk7l_8"><header class="_nav_sunkp_4"><div class="container _nav__inner_sunkp_13"><a class="_wordmark_sunkp_21" aria-label="HeartBond support home" href="/" data-discover="true"><img class="_wordmark__icon_sunkp_32" src="/app-icon.png" width="32" height="32" alt=""/>HeartBond</a><nav class="_nav__links_sunkp_40" aria-label="Primary"><a class="_active_sunkp_57" aria-current="page" href="/" data-discover="true">Support</a><a href="/getting-started/" data-discover="true">Getting started</a><a href="/privacy/" data-discover="true">Privacy</a><a href="/terms/" data-discover="true">Terms</a></nav><label class="_theme_sunkp_62"><span class="visually-hidden">Appearance</span><select aria-label="Appearance"><option value="system" selected="">System</option><option value="calm">Calm</option><option value="classic">Classic</option><option value="dark">Dark</option></select></label></div></header><main><app-home><section class="_hero_1u70e_2"><div class="container"><img class="_hero__icon_1u70e_9" src="/icon-384.png" width="96" height="96" alt=""/><p class="_hero__eyebrow_1u70e_17">Heart rate, HRV and sleep for Apple Health</p><h1>Your Health Remastered</h1><p class="_hero__lead_1u70e_26">HeartBond reads the heart rate and sleep your Apple Watch, Oura Ring, and other Health sources already record, then draws each day as a graph. Open any date you want to return to, on iPhone, iPad, and Mac.</p><p class="_hero__lead_1u70e_26">Plot every sample when you want fine detail. Or use the High–low line: the highest and lowest reading in each five-minute period. Each night&#x27;s sleep stages sit behind the heart rate, with the time asleep in the legend.</p><p class="_hero__note_1u70e_32">Your data stays in Apple Health and your own iCloud account. HeartBond asks before it reads anything.</p></div><figure class="_hero__figure_1u70e_37"><div class="_hero__frame_1u70e_51"><img class="_hero__shot_1u70e_59" src="/hero-mac-20261014.png" alt="HeartBond on Mac, two days of Demo Data with heart rate and sleep stages." width="2880" height="1232" fetchPriority="high"/></div><figcaption class="_hero__caption_1u70e_76"><p>HeartBond on Mac. The upper day draws Watch (blue) and Ring (violet) as lines. The lower day keeps all samples and plots them as a point cloud, with a spike near 11:00. Each night&#x27;s sleep stages sit behind the heart rate, with the total in the legend: 6h30 asleep as REM 1h40, Core 3h15, and Deep 1h35 above, and 7h40 as REM 1h40, Core 3h50, and Deep 2h10 below.</p><p>The Demo Data chip means these traces are generated for the graph, sleep stages included. They are not a person&#x27;s Health record, so this page does not publish private health data.</p><p>Private Data is the other environment. HeartBond asks before it reads Apple Health. Downloaded days sync through your own iCloud account. There is no HeartBond server holding them.</p></figcaption></figure></section><section class="container _section_1u70e_100"><h2>Get HeartBond</h2><p class="_section__lead_1u70e_104">HeartBond is on the App Store for iPhone and iPad, and on the Mac App Store. <a href="/getting-started/" data-discover="true">Getting started</a> walks through Health access, downloading days, iCloud, and Keep all samples.</p><ul class="_badges_1u70e_108"><li><a class="_store-badge_1u70e_118" href="https://apps.apple.com/app/apple-store/id6449156557?pt=126040921&amp;ct=Get-HeartBond&amp;mt=8" rel="noopener noreferrer"><img class="_store-badge__mark_1u70e_124 _store-badge__mark--on-light_1u70e_140" src="/badges/app-store.svg" alt="Download on the App Store" height="40"/><img class="_store-badge__mark_1u70e_124 _store-badge__mark--on-dark_1u70e_136" src="/badges/app-store-wht.svg" alt="" height="40" aria-hidden="true"/></a></li><li><a class="_store-badge_1u70e_118" href="https://apps.apple.com/app/apple-store/id6449156557?pt=126040921&amp;ct=Get-HeartBond&amp;mt=12" rel="noopener noreferrer"><img class="_store-badge__mark_1u70e_124 _store-badge__mark--on-light_1u70e_140" src="/badges/mac-app-store.svg" alt="Download on the Mac App Store" height="40"/><img class="_store-badge__mark_1u70e_124 _store-badge__mark--on-dark_1u70e_136" src="/badges/mac-app-store-wht.svg" alt="" height="40" aria-hidden="true"/></a></li><li><a class="_store-badge_1u70e_118" href="https://www.apple.com/health/" rel="noopener noreferrer"><img class="_store-badge__mark_1u70e_124" src="/badges/apple-health.svg" alt="Works with Apple Health" height="40"/></a></li></ul></section><section class="container _section_1u70e_100"><h2>What the app does</h2><ul class="_features_1u70e_148"><li class="card"><h3>A graph you can read</h3><p class="_card__body_1u70e_156">Heart rate defaults to High–low: each five-minute bin plots its highest and lowest sample in bpm. That keeps many days on screen at once. Tick Keep all samples on a day to retain every reading of it instead.</p></li><li class="card"><h3>How you look at the days</h3><p class="_card__body_1u70e_156">Days sit in one continuous list. Move through them in order, or pick a date and land on that row. The default drawing is a line. A day that keeps all samples can appear as a point cloud of every stored reading.</p></li><li class="card"><h3>Sleep behind the heart rate</h3><p class="_card__body_1u70e_156">Each night&#x27;s sleep from Health is drawn as a band behind that day&#x27;s heart rate, with REM, Core, and Deep stages and the total time asleep in the legend. Sleep comes from your Private Data in Health. You can hide the bands when you only want the heart rate.</p></li><li class="card"><h3>Health is the source</h3><p class="_card__body_1u70e_156">Samples come from the devices you have connected to Health, through Apple&#x27;s HealthKit framework. HeartBond asks for access first and reads only what you allow. Apple Watch and Oura Ring are Health sources, not separate logins.</p></li><li class="card"><h3>The same days on every device</h3><p class="_card__body_1u70e_156">Your downloaded days sync through your own iCloud account, so an iPhone, an iPad, and a Mac show the same history. A Mac that cannot fetch Health still receives days you download on iPhone or iPad.</p></li><li class="card"><h3>Colors and graph size</h3><p class="_card__body_1u70e_156">Each device series can have its own color. You can expand or contract the graph&#x27;s height and width, and switch between fitting the plot and filling the view.</p></li></ul></section><section class="container _section_1u70e_100"><h2>We can help with</h2><ul class="_help_1u70e_161"><li>Reading and understanding your heart rate data</li><li>Syncing between your devices</li><li>Customizing colors and graph sizes</li><li>General questions about the app</li></ul><p class="_section__lead_1u70e_104">Questions, concerns, or anything related to HeartBond can go on the<!-- --> <a href="https://github.com/ikiapps/HeartBond-Support/discussions" rel="noopener noreferrer">GitHub Discussions page</a>.</p></section></app-home></main><footer class="_footer_1s2ft_9"><div class="container _footer__inner_1s2ft_16"><nav class="_footer__links_1s2ft_21" aria-label="Footer"><a href="/" data-discover="true">Support</a><a href="/getting-started/" data-discover="true">Getting started</a><a href="/privacy/" data-discover="true">Privacy</a><a href="/terms/" data-discover="true">Terms</a><a href="https://ikisystems.com/" target="_blank" rel="noopener noreferrer">IKI Systems</a></nav><p class="_footer__fine_1s2ft_43">Copyright © 2026 <a href="https://ikisystems.com/" target="_blank" rel="noopener noreferrer">IKI Systems</a>. All rights reserved.</p></div></footer></app-root><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><script>window.__reactRouterContext = {"basename":"/","future":{"unstable_optimizeDeps":false,"v8_passThroughRequests":false,"v8_trailingSlashAwareDataRequests":false,"unstable_previewServerPrerendering":false,"v8_middleware":false,"v8_splitRouteModules":false,"v8_viteEnvironmentApi":false},"routeDiscovery":{"mode":"initial"},"ssr":true,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">import "/assets/manifest-78aa19f4.js";
+import * as route0 from "/assets/root-hrIv87wH.js";
+import * as route1 from "/assets/home-CYwne_-0.js";
+  
+  window.__reactRouterRouteModules = {"root":route0,"en/home":route1};
+
+import("/assets/entry.client-CXCBEhj1.js");</script><!--$?--><template id="B:0"></template><!--/$--><script id="_R_">requestAnimationFrame(function(){$RT=performance.now()});</script><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_3\":-5,\"_4\":-5},\"loaderData\",{},\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>$RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&requestAnimationFrame(g._reactRetry)}}a.length=0};
+$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script></body></html>
