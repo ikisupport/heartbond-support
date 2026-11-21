@@ -89,10 +89,10 @@
       ]
     },
     "screenshot": {
-      "src": "hero-mac-20261014.png",
-      "alt": "HeartBond on Mac, two days of Demo Data with heart rate and sleep stages.",
+      "src": "hero-mac-20261121.png",
+      "alt": "HeartBond on Mac, two days of Demo Data with heart rate, sleep stages, workouts, and weight.",
       "caption": [
-        "HeartBond on Mac. The upper day draws Watch (blue) and Ring (violet) as lines. The lower day keeps all samples and plots them as a point cloud, with a spike near 11:00. Each night's sleep stages sit behind the heart rate, with the total in the legend: 6h30 asleep as REM 1h40, Core 3h15, and Deep 1h35 above, and 7h40 as REM 1h40, Core 3h50, and Deep 2h10 below.",
+        "HeartBond on Mac. Thursday keeps every sample as a point cloud, with spikes near 12:00 and 16:00, a VO₂ of 50.9, Walk and Run, and 77.5 kg in the side column. Wednesday draws Watch and Ring as High–low lines, marks Walk and Strength, and rises near 21:00. Both nights show 7h40 asleep: REM 1h40, Core 3h50, and Deep 2h10.",
         "The Demo Data chip means these traces are generated for the graph, sleep stages included. They are not a person's Health record, so this page does not publish private health data.",
         "Private Data is the other environment. HeartBond asks before it reads Apple Health. Downloaded days sync through your own iCloud account. There is no HeartBond server holding them."
       ]

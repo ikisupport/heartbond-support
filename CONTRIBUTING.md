@@ -50,7 +50,7 @@ then runs `scripts/verify-publish-artifact.mjs` over the result. It refuses:
 ## `check:assets` — the failure the other gates cannot see
 
 `copy.json` stores image paths relative to the site root
-(`hero-mac-20261014.png`, `badges/app-store.svg`). The legacy Angular site had
+(`hero-mac-20261121.png`, `badges/app-store.svg`). The legacy Angular site had
 `<base href="/">` in its `index.html`, which made those resolve from the root
 on every route. **No base tag ships here** — one would also rewrite the in-page
 `#fragment` links — so `app/lib/asset.ts` makes each path root-absolute at

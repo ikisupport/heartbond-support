@@ -39,20 +39,18 @@
   margin: 1.8rem auto 0;
 }
 
-/* The capture is flush to the window. Its corner is a 32.5px circle on
-   the 2880×1232 file. A single percentage would turn that into an ellipse,
-app-home because each axis resolves against a different side,
-app-home so the two values
+/* The capture is flush to the window. Its corner is a 48px circle on
+   the 2880×1370 file. A single percentage would turn that into an ellipse,
+   because each axis resolves against a different side, so the two values
    keep the curve circular as the image scales. The file's top and bottom
    hairline is lighter than the sides. A translucent ring would blend with
-   that and stay uneven,
-app-home so the overlay is an opaque 1px stroke. No drop
+   that and stay uneven, so the overlay is an opaque 1px stroke. No drop
    shadow. */
 .hero__frame {
   position: relative;
   width: min(92%, var(--max-width));
   margin: 0 auto;
-  border-radius: 1.128% / 2.638%;
+  border-radius: 1.667% / 3.504%;
   overflow: hidden;
 }
 
@@ -75,7 +73,7 @@ app-home so the overlay is an opaque 1px stroke. No drop
 
 .hero__caption {
   width: min(92%, var(--max-width));
-  /* The 2880×1232 capture has no transparent pad under the window
+  /* The 2880×1370 capture has no transparent pad under the window
      (bottom pad is 0px), so the caption sits a normal 2rem below it. */
   margin: 2rem auto 0;
   color: var(--text-secondary);

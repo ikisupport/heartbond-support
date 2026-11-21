@@ -41,7 +41,7 @@ export default function Home() {
               src={asset(home.screenshot.src)}
               alt={home.screenshot.alt}
               width={2880}
-              height={1232}
+              height={1370}
               fetchPriority="high"
             />
           </div>
