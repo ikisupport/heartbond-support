@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: © 2026-Present IKI Systems
+ * SPDX-License-Identifier: LicenseRef-Proprietary
+ */
+
 /* From home.component.ts's `styles` block. */
 .hero {
   background: var(--surface-2);
@@ -40,7 +45,7 @@
 }
 
 /* The capture is flush to the window. Its corner is a 48px circle on
-   the 2880×1370 file. A single percentage would turn that into an ellipse,
+   the 2880×1336 file. A single percentage would turn that into an ellipse,
    because each axis resolves against a different side, so the two values
    keep the curve circular as the image scales. The file's top and bottom
    hairline is lighter than the sides. A translucent ring would blend with
@@ -50,7 +55,7 @@
   position: relative;
   width: min(92%, var(--max-width));
   margin: 0 auto;
-  border-radius: 1.667% / 3.504%;
+  border-radius: 1.667% / 3.593%;
   overflow: hidden;
 }
 
@@ -73,7 +78,7 @@
 
 .hero__caption {
   width: min(92%, var(--max-width));
-  /* The 2880×1370 capture has no transparent pad under the window
+  /* The 2880×1336 capture has no transparent pad under the window
      (bottom pad is 0px), so the caption sits a normal 2rem below it. */
   margin: 2rem auto 0;
   color: var(--text-secondary);
@@ -101,6 +106,53 @@
 
 .section__lead {
   color: var(--text-secondary);
+}
+
+/* The HRV Timeline capture is a tall Mac window, not the wide day graph the
+   hero frames. Two things the hero does are wrong for it:
+
+   - no clip and no overlay ring. The file's own corners are already
+     transparent, so the window arrives rounded. The hero's radius is a
+     percentage pair tuned to 2880×1336; resolved against these sides it would
+     oval the corner, and a second stroke would sit visibly beside the one the
+     capture already has.
+   - a width cap rather than a share of the column. At 92% of --max-width this
+     window would be blown up well past its natural size; 440px keeps it near
+     it on a wide screen and still lets it shrink on a phone. */
+.guide__figure {
+  width: min(100%, 440px);
+  margin: 1.4rem auto 0;
+}
+
+.guide__shot {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Same first-line treatment as the hero caption — darker and a step larger for
+   the sentence naming the image, plain secondary text after it. The hero's own
+   class cannot be reused: it is sized to min(92%, var(--max-width)), which
+   would run the caption wider than the 440px figure above it. */
+.guide__caption {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.guide__caption p {
+  margin-bottom: 0.5rem;
+}
+
+.guide__caption p:first-child {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.guide__caption p:last-child {
+  margin-bottom: 0;
 }
 
 .badges {

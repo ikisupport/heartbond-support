@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: © 2026-Present IKI Systems
+ * SPDX-License-Identifier: LicenseRef-Proprietary
+ */
+
 /* Was the `styles:` block of navbar.component.ts. Angular's emulated view
    encapsulation scoped every one of these to that component, so they are a
    CSS Module here rather than rules in the global sheet. */

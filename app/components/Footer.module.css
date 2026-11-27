@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: © 2026-Present IKI Systems
+ * SPDX-License-Identifier: LicenseRef-Proprietary
+ */
+
 /* Was the footer half of app.component.ts's `styles:` block. The shell's own
    `:host` and `main` rules live in app/root.module.css; these are the rules
    that only ever applied to the footer.

@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: © 2026-Present IKI Systems
+ * SPDX-License-Identifier: LicenseRef-Proprietary
+ */
+
 import { Link, type MetaArgs } from 'react-router';
 import { headFor } from '../head';
 import { asset } from '../lib/asset';
@@ -41,7 +46,7 @@ export default function Home() {
               src={asset(home.screenshot.src)}
               alt={home.screenshot.alt}
               width={2880}
-              height={1370}
+              height={1336}
               fetchPriority="high"
             />
           </div>
@@ -51,6 +56,38 @@ export default function Home() {
             ))}
           </figcaption>
         </figure>
+      </section>
+
+      {/* The guide is the product word — it is the accessibility name on the
+          draggable marker. The copy describes the Trend line only as what the
+          capture visibly does, never as a score or a clinical figure. */}
+      <section className={cx('container', s.section)}>
+        <h2>{home.guide.heading}</h2>
+        {home.guide.paragraphs.map(para => (
+          <p className={s.section__lead} key={para}>
+            {para}
+          </p>
+        ))}
+        {/* One figure today. The list shape stays because captures differ in
+            window size, so each carries its own width and height rather than
+            a pair fixed in the markup — a wrong pair reserves the wrong box
+            and shifts the page as the image loads. */}
+        {home.guide.figures.map(fig => (
+          <figure className={s.guide__figure} key={fig.src}>
+            <img
+              className={s.guide__shot}
+              src={asset(fig.src)}
+              alt={fig.alt}
+              width={fig.width}
+              height={fig.height}
+            />
+            <figcaption className={s.guide__caption}>
+              {fig.caption.map(para => (
+                <p key={para}>{para}</p>
+              ))}
+            </figcaption>
+          </figure>
+        ))}
       </section>
 
       <section className={cx('container', s.section)}>

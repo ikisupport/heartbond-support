@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: © 2026-Present IKI Systems
+ * SPDX-License-Identifier: LicenseRef-Proprietary
+ */
+
 import { Link } from 'react-router';
 import s from './Navbar.module.css';
 import { asset } from '../lib/asset';

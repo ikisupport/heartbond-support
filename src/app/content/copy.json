@@ -92,9 +92,30 @@
       "src": "hero-mac-20261121.png",
       "alt": "HeartBond on Mac, two days of Demo Data with heart rate, sleep stages, workouts, and weight.",
       "caption": [
-        "HeartBond on Mac. Thursday keeps every sample as a point cloud, with spikes near 12:00 and 16:00, a VO₂ of 50.9, Walk and Run, and 77.5 kg in the side column. Wednesday draws Watch and Ring as High–low lines, marks Walk and Strength, and rises near 21:00. Both nights show 7h40 asleep: REM 1h40, Core 3h50, and Deep 2h10.",
+        "HeartBond on Mac. Wednesday draws Watch and Ring as High–low lines, marks Walk 45m around 08:20 and Strength 36m past 20:30. Tuesday keeps every sample as a point cloud, with Walk 21m at about 12:10, Run 42m finishing near 18:30, a VO₂ of 48.3, and 77.6 kg in the side column. Both nights show 7h40 asleep: REM 1h40, Core 3h50, and Deep 2h10.",
         "The Demo Data chip means these traces are generated for the graph, sleep stages included. They are not a person's Health record, so this page does not publish private health data.",
         "Private Data is the other environment. HeartBond asks before it reads Apple Health. Downloaded days sync through your own iCloud account. There is no HeartBond server holding them."
+      ]
+    },
+    "guide": {
+      "heading": "A level to compare the trend with",
+      "paragraphs": [
+        "HRV moves from hour to hour, so a single reading is hard to place. HRV Timeline stacks the days you have loaded into one column, and Trend 24 h draws one line through them. A week becomes a shape you can take in at once.",
+        "The guide gives that line something to be read against. Drag it out from the millisecond scale and leave it on a level you care about, such as where your line usually runs. Stretches above and below it then stand out without checking the scale. HeartBond keeps the value, so every visit compares against the same level.",
+        "Sleep is drawn on the same column, so you can see what the line did during each night. Each unbroken night is washed behind the readings in the color of the device whose line is drawn, with its stages in four lanes down the high-value edge: Awake outermost, then REM, Core, and Deep nearest the line. A toggle in the Display menu hides them.",
+        "Day height sets how much time the window shows. Drag it left to fit more days on screen and judge the longer run. Drag it right to give each day more room and finer hour marks. The figure beside the slider is the step between those marks, 6 h here."
+      ],
+      "figures": [
+        {
+          "src": "hrv-timeline-trend-24h-mac.png",
+          "width": 1256,
+          "height": 1716,
+          "alt": "HeartBond HRV Timeline on Mac, dark window. Days run from Monday 23 November down through Tuesday 17 November. A guide labeled 77.7 stands beside a trend line that rises and falls with each day. Each night is washed in a lighter tone, with four lanes of sleep stages down the right edge. The menu reads Trend 24 h, the range beside it reads 15–122, and a Day height slider reads 6 h.",
+          "caption": [
+            "HRV Timeline on Mac. Trend is 24 h, Day height is at a 6 h step, and the guide stands at 77.7 ms. Each night is washed behind the readings, with its sleep stages in the lanes down the right edge.",
+            "These traces are generated for the graph, sleep stages included. They are not a person's Health record, so this page does not publish private health data."
+          ]
+        }
       ]
     },
     "features": {

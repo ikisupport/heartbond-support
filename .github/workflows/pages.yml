@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: © 2026-Present IKI Systems
+# SPDX-License-Identifier: LicenseRef-Proprietary
+
 # Builds the site and publishes it to the gh-pages branch.
 #
 # Pages source in the GitHub UI stays "Deploy from a branch", with branch
